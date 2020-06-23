@@ -3,8 +3,8 @@ MAINTAINER Argo triwidodo "argo.triwidodo@gdn-commerce.com"
 
 ENV version=2.1.0
 
-RUN wget https://github.com/browserup/browserup-proxy/releases/download/v${version}/browserup-proxy-${version}.tar
-RUN tar xvf browserup-proxy-${version}.tar
-RUN ln -s browserup-proxy-${version} browserup-proxy
+RUN wget https://github.com/browserup/browserup-proxy/releases/download/v2.1.0/browserup-proxy-2.1.0.tar
+RUN tar xvf browserup-proxy-2.1.0.tar
+RUN ln -s browserup-proxy-2.1.0 browserup-proxy
 EXPOSE 9090-10000
 CMD ["browserup-proxy/bin/browserup-proxy -port 9090 -proxyPortRange 9091-10000"]
